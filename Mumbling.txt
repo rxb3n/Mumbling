@@ -1,0 +1,11 @@
+function accum(str) {
+var repeater = 0;
+i= 0;
+var result = [];
+while (i < str.length) {
+ result.push(str[i].toUpperCase() + str[i].toLowerCase().repeat(repeater).split(" "));
+  repeater++;
+  i++;
+}
+  return result.join('-');
+}
